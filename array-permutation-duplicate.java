@@ -28,6 +28,10 @@ class Solution {
         }
     }
     public List<List<Integer>> permuteUnique(int[] nums) {
+        // *
+        // ------- For lexicographically permutations ------
+        // Arrays.sort(nums); 
+        // *
         List<List<Integer>> list = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int num : nums) {
