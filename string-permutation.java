@@ -31,12 +31,15 @@ class Solution {
         }
     }
     public List<String> find_permutation(String S) {
-        char[] arr = S.toCharArray();
-        Arrays.sort(arr); // For lexicographically permutations
-        String str = new String(arr);
-        
         List<String> list = new ArrayList<>();
-        dfs(str, "", list);
+        // *
+        // ------- For lexicographically permutations ------
+        // char[] arr = S.toCharArray();
+        // Arrays.sort(arr); 
+        // String str = new String(arr);
+        // dfs(str, "", list);
+        // *
+        dfs(S, "", list);
         return list;
     }
 }
