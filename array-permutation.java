@@ -30,7 +30,13 @@ class Solution {
         }
     }
     public List<List<Integer>> permute(int[] nums) {
-        Arrays.sort(nums);
+        // *
+        // ------- For lexicographically permutations ------
+        // char[] arr = S.toCharArray();
+        // Arrays.sort(arr); 
+        // String str = new String(arr);
+        // dfs(str, "", list);
+        // *
         List<List<Integer>> list = new ArrayList<>();
         dfs(nums, list, new ArrayList<>());
         return list;
