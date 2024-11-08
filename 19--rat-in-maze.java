@@ -28,8 +28,6 @@ Explanation:
 No path exists and destination cell is 
 blocked. */
 
-
-
 class Solution {
     public static void dfs(int[][] matrix, boolean[][] visited, ArrayList<String> res, int n, int r, int c, String currPath) {
         if (r < 0 || r >= n || c < 0 || c >= n || matrix[r][c] == 0 || visited[r][c]) return;
